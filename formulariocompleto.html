@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Formulario de Registro</title>
+</head>
+<body>
+         <h1>Registro de Usuarios</h1>
+         
+         <form action="procesar_registro.php" method="post">
+              <fieldset>
+                  <legend>Información Personal</legend>
+                  
+                  <label for="nombre">Nombre Completo:</label><br>
+                  <input type="text" id="nombre" name="nombre" placeholder="Delia Ortiz" required><br><br>
+
+                  <label for="email">Correo electronico</label><br>
+                  <input type="email" id="email" name="email" placeholder="deliaortizservin@gmail.com" required><br><br>
+
+                  <label for="fechaNacimiento">Fecha de Nacimiento</label><br>
+                  <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+              </fieldset>
+              <fieldset>
+                   <legend>Credenciales</legend>
+                   
+                   <label for="usuario">Nombre de usuario</label><br>
+                   <input type="text" id="usuario" name="usuario" placeholder="usuario123" required><br><br>
+
+                   <label for="password">Contraseña</label><br>
+                   <input type="password" id="password" name="password" required><br><br>
+
+                   <label for="confirmPassword">Confirmar Contraseña</label><br>
+                   <input type="password"  id="confirmPassword" name="confirmPassword" required><br><br>
+              </fieldset>
+              <fieldset>
+                   <legend>Preferencias</legend>
+                   
+                   <p>Género:</p>
+                   <input type="radio" id="masculino" name="género" value="masculino">
+                   <label form="masculino">Masculino</label><br>
+                   <input type="radio" id="femenino" name="género" value="femenino">
+                   <label for="femenino">femenino</label><br>
+                   <input type="radio" id="otro" name="género" value="otro">
+                   <label for="Otro">Otro</label><br><br>
+
+                   <p>Intereses:</p>
+                   <input type="checkbox" id="tecnologia" name="Intereses" value="tecnologia">
+                   <label for="tecnologia">Tecnologia</label><br>
+                   <input type="checkbox" id="arte" name="Intereses" value="arte">
+                   <label for="arte">Arte</label><br>
+                   <input type="checkbox" id="deportes" name="Intereses" value="deportes">
+                   <label form="deportes">Deportes</label>
+
+                   <label for="pais">Pais</label><br>
+                   <select id="pais" name="pais" required>
+                       <option value="">--Selecciona tu pais</option>
+                       <option value="mexico">Mexico</option>
+                       <option value="españa">España</option>
+                       <option value="argentina">Argentina</option>
+                       <option value="chile">Chile</option>   
+                   </select><br><br>
+              </fieldset>
+
+              <input type="submit" value="Registrarse">
+         </form>
+</body>
+</html>
